@@ -30,9 +30,8 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
-          ],
-          "scripts": [
-          ]
+            ],
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -122,6 +121,10 @@
               "devServerTarget": "Portfolio:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
