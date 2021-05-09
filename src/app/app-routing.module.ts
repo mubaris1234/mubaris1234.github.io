@@ -8,12 +8,12 @@ import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path:'home', component: HomeComponent },
-  {path:'education',component:EducationComponent},
-  {path:'projects',component:ProjectComponent},
-  {path:'contact',component:ContactComponent},
-  {path:'skills',component:SkillsComponent},
-  {path:'achievements',component:AchievementsComponent},
+  {path:'home', component: HomeComponent,data: { animationState: 'One' } },
+  {path:'education',component:EducationComponent, data: { animationState: 'Two' }},
+  {path:'projects',component:ProjectComponent ,data: { animationState: 'Five' }},
+  {path:'contact',component:ContactComponent ,data: { animationState: 'Six' }},
+  {path:'skills',component:SkillsComponent, data: { animationState: 'Four' }},
+  {path:'achievements',component:AchievementsComponent, data: { animationState: 'Three' }},
   {path:'',redirectTo:'/home',pathMatch:'full'},
   {path:'**',redirectTo:'/home',pathMatch:'full'}
 ];
