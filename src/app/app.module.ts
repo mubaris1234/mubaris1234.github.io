@@ -10,6 +10,7 @@ import { EducationComponent } from './education/education.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AchievementsComponent } from './achievements/achievements.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     EducationComponent,
     ProjectComponent,
     ContactComponent,
-    SkillsComponent
+    SkillsComponent,
+    AchievementsComponent
   ],
   imports: [
     BrowserModule,
